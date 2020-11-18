@@ -1,7 +1,6 @@
 import { observer } from "mobx-react";
 
-// Style
-// import { ListWrapper } from "../styles";
+import { DetailWrapper } from "../styles";
 
 //Components
 import MovieItem from "./MovieItem";
@@ -11,13 +10,11 @@ import moviesData from "../Data/moviesData";
 
 const movieList = () => {
   const moviesList = moviesData.movies.map((_movie) => (
-    <h1>
-      <MovieItem movie={_movie} />
-    </h1>
+    <MovieItem movie={_movie} />
   ));
   return (
     <>
-      <h1>{moviesList}</h1>
+      <DetailWrapper>{moviesList}</DetailWrapper>
       {/* <ListWrapper> </ListWrapper> */}
     </>
   );

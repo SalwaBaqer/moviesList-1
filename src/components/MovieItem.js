@@ -1,9 +1,11 @@
+import { ItemWrapper } from "../styles";
+
 const movieItem = ({ movie }) => {
   return (
     <>
       {/* <ProductWrapper> */}
 
-      <h3>{movie.title}</h3>
+      <ItemWrapper>{movie.title}</ItemWrapper>
 
       {/* </ProductWrapper> */}
     </>
