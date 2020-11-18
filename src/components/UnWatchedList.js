@@ -9,11 +9,13 @@ import SearchBar from "./SearchBar";
 //store
 import moviesData from "../Data/moviesData";
 
-const unWatchedList = () => {
+const UnWatchedList = () => {
   const [query, setQuery] = useState("");
 
   const moviesList = moviesData.movies.filter(
-    (_movie) => _movie.watched === true && _movie.title.includes(query)
+    (_movie) =>
+      _movie.watched === true &&
+      _movie.title.toLowerCase().includes(query.toLowerCase())
   );
 
   const unWatchedListAfterFliter = moviesList.map((_movie) => (
@@ -22,10 +24,11 @@ const unWatchedList = () => {
 
   return (
     <>
+      <h1>{unWatchedListAfterFliter.length}</h1>
       <SearchBar setQuery={setQuery} />
       <DetailWrapper>{unWatchedListAfterFliter}</DetailWrapper>
     </>
   );
 };
 
-export default observer(unWatchedList);
+export default observer(UnWatchedList);

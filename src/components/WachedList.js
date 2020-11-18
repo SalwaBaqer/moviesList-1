@@ -13,7 +13,9 @@ const WachedList = () => {
   const [query, setQuery] = useState("");
 
   const moviesList = moviesData.movies.filter(
-    (_movie) => _movie.watched === false && _movie.title.includes(query)
+    (_movie) =>
+      _movie.watched === false &&
+      _movie.title.toLowerCase().includes(query.toLowerCase())
   );
 
   const watchedList = moviesList.map((_movie) => (
@@ -23,6 +25,7 @@ const WachedList = () => {
   return (
     <>
       <h1>Watched List</h1>
+      <h1>{watchedList.length}</h1>
       <SearchBar setQuery={setQuery} />
       {console.log(query)}
       <DetailWrapper>{watchedList}</DetailWrapper>
