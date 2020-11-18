@@ -7,7 +7,7 @@ const DeletButton = ({ movie }) => {
   return (
     <>
       <DltButtonStyled onClick={() => moviesData.deleteMovie(movie.id)}>
-        Delet
+        Delete
       </DltButtonStyled>
     </>
   );
