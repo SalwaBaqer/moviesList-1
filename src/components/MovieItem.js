@@ -1,15 +1,15 @@
 import { ItemWrapper } from "../styles";
 
 //buttons
-import WatchedButton from "./buttons/Watched";
-import Unwatched from "./buttons/Unwatched";
+import WatchedButton from "./buttons/WatchedBtn";
+import UnWatchedButton from "./buttons/UnwatchedBtn";
 const movieItem = ({ movie, watched }) => {
   return (
     <>
       <ItemWrapper>
         {movie.title}
 
-        {watched ? <Unwatched /> : <WatchedButton />}
+        {watched ? <UnWatchedButton /> : <WatchedButton movie={movie} />}
       </ItemWrapper>
     </>
   );

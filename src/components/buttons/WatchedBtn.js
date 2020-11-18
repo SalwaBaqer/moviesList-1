@@ -3,11 +3,18 @@ import { useState } from "react";
 
 //button
 import { WatchedButtonStyled } from "../../styles";
+const moveToWatched = () => {
+  return <></>;
+};
 
 const WatchedButton = ({ movie }) => {
   return (
     <>
-      <WatchedButtonStyled onClick={() => alert("hhelo")}>
+      <WatchedButtonStyled
+        onClick={() => {
+          alert(`${movie.id}`);
+        }}
+      >
         Watched
       </WatchedButtonStyled>
     </>

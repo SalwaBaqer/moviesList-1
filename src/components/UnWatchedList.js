@@ -8,7 +8,7 @@ import MovieItem from "./MovieItem";
 //store
 import moviesData from "../Data/moviesData";
 
-const movieList = () => {
+const unWatchedList = () => {
   const moviesList = moviesData.movies.map((_movie) => (
     <MovieItem movie={_movie} />
   ));
@@ -19,4 +19,4 @@ const movieList = () => {
   );
 };
 
-export default observer(movieList);
+export default observer(unWatchedList);
