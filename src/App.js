@@ -2,8 +2,6 @@
 import UnWatchedList from "./components/UnWatchedList";
 import WachedList from "./components/WachedList";
 import AddMovie from "./components/AddMovie";
-//state
-import { useState } from "react";
 
 function App() {
   return (
