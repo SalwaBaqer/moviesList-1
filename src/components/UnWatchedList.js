@@ -5,33 +5,24 @@ import { DetailWrapper } from "../styles";
 //Components
 import MovieItem from "./MovieItem";
 import SearchBar from "./SearchBar";
+
 //store
 import moviesData from "../Data/moviesData";
 
 const unWatchedList = () => {
+  const [query, setQuery] = useState("");
+
   const moviesList = moviesData.movies.filter(
-    (_movie) => _movie.watched === true
+    (_movie) => _movie.watched === true && _movie.title.includes(query)
   );
 
   const unWatchedListAfterFliter = moviesList.map((_movie) => (
-    <MovieItem movie={_movie} />
+    <MovieItem movie={_movie} watched={_movie.watched} />
   ));
-  // /////
 
-  // const [query, setQuery] = useState("");
-
-  //   const moviesList = moviesData.movies.filter(
-  //     (_movie) => _movie.watched === false && _movie.title.includes(query)
-  //   );
-
-  //   const watchedList = moviesList.map((_movie) => (
-  //     <MovieItem movie={_movie} watched={_movie.watched} />
-  //   ));
-
-  //
   return (
     <>
-      <SearchBar />
+      <SearchBar setQuery={setQuery} />
       <DetailWrapper>{unWatchedListAfterFliter}</DetailWrapper>
     </>
   );

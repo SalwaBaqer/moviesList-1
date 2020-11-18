@@ -16,6 +16,7 @@ class MoviesData {
     movie.id = movies[movies.length - 1].id + 1;
     console.log(`${movie.id} id`);
     console.log(`${movies[movies.length - 1].id} idlength`);
+
     this.movies.push(movie);
   };
 
