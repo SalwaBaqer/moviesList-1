@@ -2,18 +2,18 @@ const movies = [
   {
     title: "who killed change",
     id: 1,
-    // mark: true,
+    watched: true,
   },
 
   {
     title: "The EMyth Revisited",
     id: 2,
-    // mark: true,
+    watched: true,
   },
   {
     title: "Developing the Leader Within You",
     id: 3,
-    // mark: true,
+    watched: true,
   },
 ];
 

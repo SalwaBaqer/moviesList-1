@@ -10,12 +10,11 @@ import moviesData from "../Data/moviesData";
 
 const WachedList = () => {
   const moviesList = moviesData.movies.filter(
-    (_movie) => _movie.title === "who killed change"
+    (_movie) => _movie.watched === false
   );
 
-  const watched = true;
   const watchedList = moviesList.map((_movie) => (
-    <MovieItem movie={_movie} watched={watched} />
+    <MovieItem movie={_movie} watched={_movie.watched} />
   ));
   return (
     <>

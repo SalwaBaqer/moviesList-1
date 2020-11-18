@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 //button
 import { WatchedButtonStyled } from "../../styles";
@@ -7,7 +6,7 @@ import { WatchedButtonStyled } from "../../styles";
 const UnWatchedButton = ({ movie }) => {
   return (
     <>
-      <WatchedButtonStyled onClick={() => alert("unwatched")}>
+      <WatchedButtonStyled onClick={() => (movie.watched = true)}>
         UnWatched
       </WatchedButtonStyled>
     </>

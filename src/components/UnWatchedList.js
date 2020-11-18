@@ -9,12 +9,17 @@ import MovieItem from "./MovieItem";
 import moviesData from "../Data/moviesData";
 
 const unWatchedList = () => {
-  const moviesList = moviesData.movies.map((_movie) => (
+  const moviesList = moviesData.movies.filter(
+    (_movie) => _movie.watched === true
+  );
+
+  const unWatchedListAfterFliter = moviesList.map((_movie) => (
     <MovieItem movie={_movie} />
   ));
+
   return (
     <>
-      <DetailWrapper>{moviesList}</DetailWrapper>
+      <DetailWrapper>{unWatchedListAfterFliter}</DetailWrapper>
     </>
   );
 };
