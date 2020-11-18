@@ -1,7 +1,12 @@
-import moviesData from "./Data/moviesData";
+import MovieList from "./components/MovieList";
 
 function App() {
-  return <div>{console.log(moviesData)}</div>;
+  return (
+    <>
+      <h1>Watch List</h1>
+      <MovieList />
+    </>
+  );
 }
 
 export default App;

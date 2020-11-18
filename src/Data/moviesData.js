@@ -1,5 +1,7 @@
-import movies from "../movies";
 import { makeObservable, observable, action } from "mobx";
+
+import movies from "../movies";
+
 class MoviesData {
   movies = movies;
 
