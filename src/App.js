@@ -3,7 +3,7 @@ import WachedList from "./components/WachedList";
 function App() {
   return (
     <>
-      <h1>Watch List</h1>
+      <h1>Movies List</h1>
       <MovieList />
       <WachedList />
     </>

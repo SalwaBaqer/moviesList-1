@@ -1,13 +1,16 @@
 import { ItemWrapper } from "../styles";
 
-const movieItem = ({ movie }) => {
+//buttons
+import WatchedButton from "./buttons/Watched";
+import Unwatched from "./buttons/Unwatched";
+const movieItem = ({ movie, watched }) => {
   return (
     <>
-      {/* <ProductWrapper> */}
+      <ItemWrapper>
+        {movie.title}
 
-      <ItemWrapper>{movie.title}</ItemWrapper>
-
-      {/* </ProductWrapper> */}
+        {watched ? <Unwatched /> : <WatchedButton />}
+      </ItemWrapper>
     </>
   );
 };

@@ -15,7 +15,6 @@ const movieList = () => {
   return (
     <>
       <DetailWrapper>{moviesList}</DetailWrapper>
-      {/* <ListWrapper> </ListWrapper> */}
     </>
   );
 };

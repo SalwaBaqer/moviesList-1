@@ -13,7 +13,10 @@ const WachedList = () => {
     (_movie) => _movie.title === "who killed change"
   );
 
-  const watchedList = moviesList.map((_movie) => <MovieItem movie={_movie} />);
+  const watched = true;
+  const watchedList = moviesList.map((_movie) => (
+    <MovieItem movie={_movie} watched={watched} />
+  ));
   return (
     <>
       <h1>Watched List</h1>
