@@ -16,6 +16,7 @@ const WachedList = () => {
   const watchedList = moviesList.map((_movie) => (
     <MovieItem movie={_movie} watched={_movie.watched} />
   ));
+
   return (
     <>
       <h1>Watched List</h1>

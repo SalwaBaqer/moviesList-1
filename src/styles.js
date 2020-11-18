@@ -30,3 +30,12 @@ export const ItemWrapper = styled.div`
   border-style: solid;
   border-left: 10px;
 `;
+
+export const DltButtonStyled = styled.button`
+  background-color: red;
+  padding: 0.75em;
+  &:hover {
+    color: gray;
+    background-color: red;
+  }
+`;
