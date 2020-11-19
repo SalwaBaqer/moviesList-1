@@ -13,9 +13,9 @@ class MoviesData {
     });
   }
   addMovie = (movie) => {
-    movie.id = movies[movies.length - 1].id + 1;
+    movie.id = this.movies[this.movies.length - 1].id + 1;
     console.log(`${movie.id} id`);
-    console.log(`${movies[movies.length - 1].id} idlength`);
+    console.log(`${this.movies[this.movies.length - 1].id} idlength`);
 
     this.movies.push(movie);
   };

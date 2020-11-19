@@ -24,7 +24,8 @@ const UnWatchedList = () => {
 
   return (
     <>
-      <h1>{unWatchedListAfterFliter.length}</h1>
+      <h1>Movies List {unWatchedListAfterFliter.length}</h1>
+
       <SearchBar setQuery={setQuery} />
       <DetailWrapper>{unWatchedListAfterFliter}</DetailWrapper>
     </>

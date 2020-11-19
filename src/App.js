@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <AddMovie />
-      <h1>Movies List</h1>
       <UnWatchedList />
       <WachedList />
     </>
