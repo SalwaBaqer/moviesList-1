@@ -10,7 +10,7 @@ body {
     display: flex;
   }
   .NumberOfItems {
-    background-color: ${(props) => props.theme.border};
+    background-color: ${(props) => props.theme.itemBackground};
     border-color: white;
     border-style:solid;
   
@@ -90,7 +90,7 @@ export const Addtext = styled.span`
 export const AddBarStyled = styled.input`
   padding: 0.5rem;
   border-radius: 4px;
-  margin-left: 50px;
+  margin-left: 10px;
   display: flex;
 `;
 
@@ -110,5 +110,7 @@ export const AddButtonStyled = styled.button`
 
 export const SearchBarStyled = styled.input`
   padding: 0.5rem;
-  margin-right: 700px;
+  margin-right: 680px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 `;

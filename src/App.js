@@ -18,7 +18,7 @@ function App() {
     deleteHover: "#f01f0a",
     watch: "#9AECB3",
     watchHover: "#5DEF89",
-    add: "#B2F7F3",
+    add: "#82E5D3",
     addHover: "#7FDED9",
   };
   return (
