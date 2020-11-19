@@ -2,9 +2,6 @@ import React from "react";
 
 //button
 import { WatchedButtonStyled } from "../../styles";
-const moveToWatched = () => {
-  return <></>;
-};
 
 const WatchedButton = ({ movie }) => {
   return (

@@ -24,11 +24,14 @@ const WachedList = () => {
 
   return (
     <>
-      <h1>Watched List {watchedList.length}</h1>
-
-      <SearchBar setQuery={setQuery} />
-      {console.log(query)}
-      <DetailWrapper>{watchedList}</DetailWrapper>
+      <div className="ListName">
+        <h1>Watched List </h1>
+        <h1 className="NumberOfItems">{watchedList.length}</h1>
+      </div>
+      <DetailWrapper>
+        <SearchBar setQuery={setQuery} />
+        {watchedList}
+      </DetailWrapper>
     </>
   );
 };

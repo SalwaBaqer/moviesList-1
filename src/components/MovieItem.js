@@ -8,14 +8,15 @@ const movieItem = ({ movie }) => {
   return (
     <>
       <ItemWrapper>
-        {movie.title}
-
-        {movie.watched ? (
-          <WatchedButton movie={movie} />
-        ) : (
-          <UnWatchedButton movie={movie} />
-        )}
-        <DeletButton movie={movie} />
+        <h3 className="title">{movie.title}</h3>
+        <div>
+          {movie.watched ? (
+            <WatchedButton movie={movie} />
+          ) : (
+            <UnWatchedButton movie={movie} />
+          )}
+          <DeletButton movie={movie} />
+        </div>
       </ItemWrapper>
     </>
   );

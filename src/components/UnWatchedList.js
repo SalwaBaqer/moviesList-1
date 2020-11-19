@@ -24,10 +24,14 @@ const UnWatchedList = () => {
 
   return (
     <>
-      <h1>Movies List {unWatchedListAfterFliter.length}</h1>
-
-      <SearchBar setQuery={setQuery} />
-      <DetailWrapper>{unWatchedListAfterFliter}</DetailWrapper>
+      <div className="ListName">
+        <h1>Movies List </h1>
+        <h1 className="NumberOfItems">{unWatchedListAfterFliter.length}</h1>
+      </div>
+      <DetailWrapper>
+        <SearchBar setQuery={setQuery} />
+        {unWatchedListAfterFliter}
+      </DetailWrapper>
     </>
   );
 };
